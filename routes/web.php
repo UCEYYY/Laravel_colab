@@ -7,9 +7,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    return view('home');
+    return view('tentang');
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
+
