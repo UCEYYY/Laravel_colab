@@ -35,3 +35,5 @@ Route::get('/profile', function (Request $request) {
     $gambar = 'img/75b38f47-c980-4b17-9a03-223f121c8a93.jpg'; 
     return view('profile', compact('nama', 'umur', 'alamat', 'hobi', 'gambar'));
 });
+
+
