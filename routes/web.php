@@ -6,7 +6,7 @@ Route::get('/', function () {
 });
 route::resource('post', 'PostController');
 
-Route::get('/for', function () {
+Route::get('/index', function () {
     $nama = "Ikhwan Maulana Ivansyah";
     $NIM = ['SI20230016'];
     $jurusan = ['Sistem Informasi'];
