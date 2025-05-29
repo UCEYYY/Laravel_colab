@@ -15,8 +15,8 @@ Route::get('/request1', function (Request $request) {
     $hobi = request('hobi');
     $gambar = 'img/Gambar Anime (6).jpg'; 
     return view('index', compact('nama', 'umur', 'alamat', 'hobi', 'gambar'));   
-route::resource('post', 'PostController');
 });
+
 
 Route::get('/for', function () {
     $nama = "Ikhwan Maulana Ivansyah";
@@ -36,4 +36,11 @@ Route::get('/profile', function (Request $request) {
     return view('profile', compact('nama', 'umur', 'alamat', 'hobi', 'gambar'));
 });
 
-
+Route::get('/request2', function () {
+    $nama = request('nama');
+    $umur = request('umur');
+    $alamat = request('alamat');
+    $hobi = request('hobi');
+    $gambar = 'img/profil.jpeg'; 
+    return view('index', compact('nama', 'umur', 'alamat', 'hobi', 'gambar'));
+});
