@@ -13,7 +13,7 @@
         @yield('content')
     </main>
     <footer style="position: fixed; bottom: 0; width: 100%; text-align: center; background-color: #f8f9fa; padding: 1px 0;">
-        <p>©2025 BIodata saya</p>
+        <p>©2025 BIodata saya:v</p>
     </footer>
 </body>
 </html>
