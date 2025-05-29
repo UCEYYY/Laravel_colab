@@ -1,14 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/home', function () {
-    return view('home');
-});
+route::resource('post', 'PostController');
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/for', function () {
+    $nama = "Ikhwan Maulana Ivansyah";
+    $NIM = ['SI20230016'];
+    $jurusan = ['Sistem Informasi'];
+    $semester = ['Semester 4'];
+    $alamat = ['Desa Ganti, Praya Timur, Lombok Tengah, Nusa Tenggara Barat'];
+    return view('for', compact('nama', 'NIM', 'jurusan', 'semester', 'alamat'));
 });
