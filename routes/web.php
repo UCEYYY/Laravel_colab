@@ -44,3 +44,12 @@ Route::get('/request2', function () {
     $gambar = 'img/profil.jpeg'; 
     return view('index', compact('nama', 'umur', 'alamat', 'hobi', 'gambar'));
 });
+
+Route::get('/biodata', function () {
+    $nama = request('nama');
+    $umur = request('umur');
+    $alamat = request('alamat');
+    $hobi = request('hobi');
+    $gambar = 'img/profil.jpeg'; 
+    return view('biodata', compact('nama', 'umur', 'alamat', 'hobi', 'gambar'));
+});
